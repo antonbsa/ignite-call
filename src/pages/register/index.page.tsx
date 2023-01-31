@@ -27,7 +27,7 @@ export default function Register() {
     register,
     handleSubmit,
     setValue,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<RegisterFormData>({
     resolver: zodResolver(RegisterFormSchema),
   })
@@ -91,7 +91,7 @@ export default function Register() {
           )}
         </label>
 
-        <Button>
+        <Button disabled={isSubmitting}>
           Próximo passo
           <ArrowRight />
         </Button>
