@@ -13,7 +13,7 @@ export const ConnectItem = styled('div', {
 
   border: '1px solid $gray600',
   padding: '$4 $6',
-  borderRadius: '$md',
+  borderRadius: '$medium',
 
   marginBottom: '$4',
 })
