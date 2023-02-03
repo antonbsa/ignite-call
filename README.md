@@ -36,3 +36,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+---
+
+## Installing and using Database
+
+To install docker with mysql, run the following command:
+
+```bash
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=docker -p 3306:3306 mysql:latest
+```
+
+then, set the environment variable `DATABASE_URL` with the value `mysql://root:docker@localhost:3306/ignitecall`
+
+To run the DB, you just need to use this command: `docker start mysql`
